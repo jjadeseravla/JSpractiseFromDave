@@ -36,7 +36,9 @@ exports.functionsAnswers = {
   // });
 
   functionFunction: function(str) {
-
+    return function(string) {
+      return str + ', ' + string;
+    };
   },
 
   makeClosures: function(arr, fn) {
