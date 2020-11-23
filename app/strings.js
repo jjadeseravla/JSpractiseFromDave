@@ -86,7 +86,13 @@ exports.stringsAnswers = {
 
   },
 
-  reverseString: function(str) {
+    reverseString: function(str) {
+      var charArr = str.split(" ");
+      //console.log(charArr);
+      var reverse = charArr.map(function (element) {
+        return element.split("").reverse().join("");
+      }).reverse().join(" ");
 
+    return reverse;
   }
-};
+}
